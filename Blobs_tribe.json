@@ -1,0 +1,91 @@
+{
+  "id": "BlobsTribe",
+  "name": "Племя Блёбов",
+  "description": "Добавляет в игру Племя Блёбов - загадочную цивилизацию слизистых существ.",
+  "version": "1.0",
+  "minimumUncivVersion": "3.0",
+  "modDependencies": [],
+  "civilizations": [
+    {
+      "name": "Племя Блёбов",
+      "nationDesignation": "Племя",
+      "startingTechs": ["Masonry", "Calendar"],
+      "uniqueUnits": [
+        {
+          "name": "Блёб-воин",
+          "replaces": "Warrior",
+          "uniqueTo": "Племя Блёбов",
+          "cost": 25,
+          "movement": 2,
+          "strength": 8,
+          "requiredTech": null,
+          "uniques": [
+            "Может лечиться каждый ход",
+            "Не подвержен штрафам от местности",
+            "[+25]% бонус в [Лес]",
+            "[+25]% бонус в [Джунгли]"
+          ]
+        },
+        {
+          "name": "Блёб-слизень",
+          "replaces": "Scout",
+          "uniqueTo": "Племя Блёбов",
+          "cost": 20,
+          "movement": 3,
+          "strength": 5,
+          "requiredTech": null,
+          "uniques": [
+            "Может пересекать горы",
+            "Невидим для других юнитов",
+            "Не оставляет следов"
+          ]
+        }
+      ],
+      "uniqueBuildings": [
+        {
+          "name": "Слизнеферма",
+          "replaces": "Granary",
+          "uniqueTo": "Племя Блёбов",
+          "cost": 60,
+          "maintenance": 1,
+          "requiredTech": "Pottery",
+          "uniques": [
+            "+1 [Food] от [Farm]",
+            "+1 [Production] в этом городе",
+            "Город не теряет [Food] при росте населения"
+          ]
+        },
+        {
+          "name": "Храм Блёбов",
+          "replaces": "Temple",
+          "uniqueTo": "Племя Блёбов",
+          "cost": 80,
+          "maintenance": 1,
+          "requiredTech": "Philosophy",
+          "uniques": [
+            "+3 [Faith]",
+            "+1 [Happiness]",
+            "10% [Food] переносится после рождения нового гражданина"
+          ]
+        }
+      ],
+      "uniques": [
+        "+1 [Food] во всех городах",
+        "Юниты игнорируют штрафы движения по болотам",
+        "Не могут строить рыбацкие лодки"
+      ],
+      "introText": "Мы - Племя Блёбов, древняя раса слизистых существ. Наша цивилизация процветает в болотах и джунглях, где другие не могут выжить. Мы распространяемся по земле, поглощая всё на своём пути. Присоединяйся к нам, и стань частью Великого Слизня!"
+    }
+  ],
+  "unitPromotions": [
+    {
+      "name": "Блёбовая регенерация",
+      "effect": "Лечит +10 HP каждый ход",
+      "unitTypes": ["Блёб-воин", "Блёб-слизень"],
+      "cost": 1
+    }
+  ],
+  "technologies": [],
+  "tileImprovements": [],
+  "tileResources": []
+}
